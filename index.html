@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nissan Photo Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="lightbox.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+
+
+
+<body>
+
+<!-- Begin NavBar Section -->
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Nissan Photo Gallery</a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="location.html">Location</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<!-- End NavBar Section -->
+
+<!-- Background Image and Text -->
+  <div class="bkimage">
+      <div class="container">
+        <h2 class="text-white">Nissan Photo Gallery</h2>
+        <p class="text-white">My journal of my visit to the Nissan Showroom in Tokyo, Japan
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+  </div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+    <h4>Nissan Global Headquarters Gallery</h4> 
+    <p>"Nissan Global Headquarters Gallery is the headquarter of the world-wide automobile manufacturing company, NISSAN MOTOR COMPANY. The first floor of the building serves  as a showroom with the current and past Nissan Car models. Great destination for car lovers!" - <a href="http://www.yokohamajapan.com" target="_blank">http://www.yokohamajapan.com</a>
+    </p>
+    </div>
+
+    <div class="col-md-4">
+    <h3>Location</h3> 
+    <p>Address:
+    1-1, Takashima 1-chome, Nishi-ku, Yokohama-shi, Kanagawa 220-8686, Japan
+    </p>
+    <p>
+    Hours: Open Today 10AM - 8PM
+    </p>
+    <p>
+    Phone: +81 45-523-5555
+    </p>
+    </div>
+
+</div>
+
+
+<!-- LightBox Section -->
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="img/GallerySignOutside.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow LBcursor">
+  </div>
+
+  <div class="column">
+    <img src="img/bottomfloor_img2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow LBcursor">
+  </div>
+
+  <div class="column">
+    <img src="img/gtr_frontshot.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow LBcursor">
+  </div>
+
+  <div class="column">
+    <img src="img/gtr_rearshot.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow LBcursor">
+  </div>
+
+  <div class="column">
+    <img src="img/gtr_interior.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow LBcursor">
+  </div>
+
+  <div class="column">
+    <img src="img/fairladyz_youngwoman.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow LBcursor">
+  </div>
+
+  <div class="column">
+    <img src="img/showcar_red.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow LBcursor">
+  </div>
+  <div class="column">
+    <img src="img/rowofracecars.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow LBcursor">
+  </div>
+
+  <div class="column">
+    <img src="img/rowofcars.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow LBcursor">
+  </div>
+
+  <div class="column">
+    <img src="img/giftshop_toys.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow LBcursor">
+  </div>
+
+  <div class="column">
+    <img src="img/gtr_fairladyz_above2.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow LBcursor">
+  </div>
+
+  <div class="column">
+    <img src="img/nissansign_interior.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow LBcursor">
+  </div>
+
+</div>
+
+<div id="myModal" class="LBmodal">
+  <span class="LBclose LBcursor" onclick="closeModal()">&times;</span>
+  <div class="LBmodal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="img/GallerySignOutside.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="img/bottomfloor_img2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="img/gtr_frontshot.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="img/gtr_rearshot.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="img/gtr_interior.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="img/fairladyz_youngwoman.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="img/showcar_red.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">8 / 12</div>
+      <img src="img/rowofracecars.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="img/rowofcars.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="img/giftshop_toys.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="img/gtr_fairladyz_above2.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">12 / 12</div>
+      <img src="img/nissansign_interior.jpg" style="width:100%">
+    </div>
+    
+    <a class="LBprev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="LBnext" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="LBdemo LBcursor" src="img/GallerySignOutside.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+
+    <div class="column">
+      <img class="LBdemo LBcursor" src="img/bottomfloor_img2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+
+    <div class="column">
+      <img class="LBdemo LBcursor" src="img/gtr_frontshot.jpg" style="width:100%" onclick="currentSlide(3)" alt="Trolltunga, Norway">
+    </div>
+
+    <div class="column">
+      <img class="LBdemo LBcursor" src="img/gtr_rearshot.jpg" style="width:100%" onclick="currentSlide(4)" alt="Mountains and fjords">
+    </div>
+
+    <div class="column">
+      <img class="LBdemo LBcursor" src="img/gtr_interior.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+    </div>
+
+    <div class="column">
+      <img class="LBdemo LBcursor" src="img/fairladyz_youngwoman.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+    </div>
+
+    <div class="column">
+      <img class="LBdemo LBcursor" src="img/showcar_red.jpg" style="width:100%" onclick="currentSlide(7)" alt="Northern Lights">
+    </div>
+
+    <div class="column">
+      <img class="LBdemo LBcursor" src="img/rowofracecars.jpg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+    </div>
+
+    <div class="column">
+      <img class="LBdemo LBcursor" src="img/rowofcars.jpg" style="width:100%" onclick="currentSlide(9)" alt="Northern Lights">
+    </div>
+
+    <div class="column">
+      <img class="LBdemo LBcursor" src="img/giftshop_toys.jpg" style="width:100%" onclick="currentSlide(10)" alt="Northern Lights">
+    </div>
+
+    <div class="column">
+      <img class="LBdemo LBcursor" src="img/gtr_fairladyz_above2.jpg" style="width:100%" onclick="currentSlide(11)" alt="Northern Lights">
+    </div>
+
+    <div class="column">
+      <img class="LBdemo LBcursor" src="img/nissansign_interior.jpg" style="width:100%" onclick="currentSlide(12)" alt="Northern Lights">
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Javascript for Lightbox -->
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("LBdemo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<!-- End Lightbox JS -->    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
+
+
