@@ -1,4 +1,3 @@
-<style>
 /*
 body {
   font-family: Verdana, sans-serif;
@@ -11,17 +10,17 @@ body {
 }
 */
 
-.row > .column {
+.LBrow > .LBcolumn {
   padding: 0 8px;
 }
 
-.row:after {
+.LBrow:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.column {
+.LBcolumn {
   float: left;
   width: 25%;
 }
