@@ -17,11 +17,11 @@
 
 <!-- Begin NavBar Section -->
 
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+  <nav class="navbar navbar-toggleable-md navbar-inverse" style="background-color: #DC143C;">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Nissan Photo Gallery</a>
+      <a class="navbar-brand mb-0" href="#">Nissan Photo Gallery</a>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
@@ -50,12 +50,16 @@
       </div>
   </div>
 
+<!-- Header -->
+<br>
 
 <div class="container">
-  <div class="row">
+  <div class="LBrow">
     <div class="col-md-4">
     <h4>Nissan Global Headquarters Gallery</h4> 
-    <p>"Nissan Global Headquarters Gallery is the headquarter of the world-wide automobile manufacturing company, NISSAN MOTOR COMPANY. The first floor of the building serves  as a showroom with the current and past Nissan Car models. Great destination for car lovers!" - <a href="http://www.yokohamajapan.com" target="_blank">http://www.yokohamajapan.com</a>
+    <p>"Nissan Global Headquarters Gallery is the headquarter of the world-wide automobile manufacturing company, NISSAN MOTOR COMPANY."</p> 
+<p>"The first floor of the building serves  as a showroom with the current and past Nissan Car models. Great destination for car lovers!" 
+<br> - <a href="http://www.yokohamajapan.com" target="_blank">Yokohama Visitors' Guide</a>
     </p>
     </div>
 
@@ -78,55 +82,66 @@
 <!-- LightBox Section -->
 <h2 style="text-align:center">Lightbox</h2>
 
-<div class="row">
-  <div class="column">
+<div class="container-fluid">
+
+  <div class="row">
+  <div class="col">
     <img src="img/GallerySignOutside.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow LBcursor">
   </div>
 
-  <div class="column">
+  <div class="col">
     <img src="img/bottomfloor_img2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow LBcursor">
   </div>
 
-  <div class="column">
+  <div class="col">
     <img src="img/gtr_frontshot.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow LBcursor">
   </div>
+</div>
 
-  <div class="column">
+  <div class="row">
+  <div class="col">
     <img src="img/gtr_rearshot.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow LBcursor">
   </div>
 
-  <div class="column">
+  <div class="col">
     <img src="img/gtr_interior.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow LBcursor">
   </div>
 
-  <div class="column">
+  <div class="col">
     <img src="img/fairladyz_youngwoman.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow LBcursor">
   </div>
+  </div>
 
-  <div class="column">
+  <div class="row">
+  <div class="col">
     <img src="img/showcar_red.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow LBcursor">
   </div>
-  <div class="column">
+
+  <div class="col">
     <img src="img/rowofracecars.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow LBcursor">
   </div>
 
-  <div class="column">
+  <div class="col">
     <img src="img/rowofcars.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow LBcursor">
   </div>
+  </div>
 
-  <div class="column">
+  <div class="row">
+  <div class="col">
     <img src="img/giftshop_toys.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow LBcursor">
   </div>
 
-  <div class="column">
+  <div class="col">
     <img src="img/gtr_fairladyz_above2.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow LBcursor">
   </div>
 
-  <div class="column">
+  <div class="col">
     <img src="img/nissansign_interior.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow LBcursor">
   </div>
+  </div>
 
-</div>
+</div> <!-- End Container-->
+
 
 <div id="myModal" class="LBmodal">
   <span class="LBclose LBcursor" onclick="closeModal()">&times;</span>
@@ -200,53 +215,54 @@
     </div>
 
 
-    <div class="column">
+    <div class="LBcolumn">
       <img class="LBdemo LBcursor" src="img/GallerySignOutside.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
     </div>
 
-    <div class="column">
+    <div class="LBcolumn">
       <img class="LBdemo LBcursor" src="img/bottomfloor_img2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
     </div>
 
-    <div class="column">
+    <div class="LBcolumn">
       <img class="LBdemo LBcursor" src="img/gtr_frontshot.jpg" style="width:100%" onclick="currentSlide(3)" alt="Trolltunga, Norway">
     </div>
 
-    <div class="column">
+    <div class="LBcolumn">
       <img class="LBdemo LBcursor" src="img/gtr_rearshot.jpg" style="width:100%" onclick="currentSlide(4)" alt="Mountains and fjords">
     </div>
 
-    <div class="column">
+    <div class="LBcolumn">
       <img class="LBdemo LBcursor" src="img/gtr_interior.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
     </div>
 
-    <div class="column">
+    <div class="LBcolumn">
       <img class="LBdemo LBcursor" src="img/fairladyz_youngwoman.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
     </div>
 
-    <div class="column">
+    <div class="LBcolumn">
       <img class="LBdemo LBcursor" src="img/showcar_red.jpg" style="width:100%" onclick="currentSlide(7)" alt="Northern Lights">
     </div>
 
-    <div class="column">
+    <div class="LBcolumn">
       <img class="LBdemo LBcursor" src="img/rowofracecars.jpg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
     </div>
 
-    <div class="column">
+    <div class="LBcolumn">
       <img class="LBdemo LBcursor" src="img/rowofcars.jpg" style="width:100%" onclick="currentSlide(9)" alt="Northern Lights">
     </div>
 
-    <div class="column">
+    <div class="LBcolumn">
       <img class="LBdemo LBcursor" src="img/giftshop_toys.jpg" style="width:100%" onclick="currentSlide(10)" alt="Northern Lights">
     </div>
 
-    <div class="column">
+    <div class="LBcolumn">
       <img class="LBdemo LBcursor" src="img/gtr_fairladyz_above2.jpg" style="width:100%" onclick="currentSlide(11)" alt="Northern Lights">
     </div>
 
-    <div class="column">
+    <div class="LBcolumn">
       <img class="LBdemo LBcursor" src="img/nissansign_interior.jpg" style="width:100%" onclick="currentSlide(12)" alt="Northern Lights">
     </div>
+
 
   </div>
 </div>
